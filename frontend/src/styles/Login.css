@@ -1,0 +1,78 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-card h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.login-info {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.login-info strong {
+  color: #555;
+  font-size: 18px;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c62828;
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-button:hover:not(:disabled) {
+  background: #555;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:active:not(:disabled) {
+  transform: translateY(0);
+}

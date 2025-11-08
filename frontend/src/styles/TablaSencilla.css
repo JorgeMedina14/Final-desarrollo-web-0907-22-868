@@ -1,0 +1,132 @@
+.tabla-container {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-sencilla {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.tabla-sencilla thead {
+  background: #333;
+  color: white;
+}
+
+.tabla-sencilla th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabla-sencilla tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s;
+}
+
+.tabla-sencilla tbody tr:hover {
+  background: #f5f5f5;
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-sencilla tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tabla-sencilla td {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.titulo-cell {
+  max-width: 300px;
+  word-wrap: break-word;
+  font-weight: 500;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge.completado {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge.pendiente {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.acciones-cell {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.btn-editar,
+.btn-eliminar {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+.btn-editar:hover {
+  background: #f5f5f5;
+  transform: scale(1.1);
+}
+
+.btn-eliminar:hover {
+  background: #f5f5f5;
+  transform: scale(1.1);
+}
+
+.tabla-vacia {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 18px;
+  background: white;
+  border-radius: 10px;
+}
+
+.tabla-vacia p {
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .tabla-sencilla {
+    font-size: 12px;
+  }
+  
+  .tabla-sencilla th,
+  .tabla-sencilla td {
+    padding: 10px 8px;
+  }
+  
+  .titulo-cell {
+    max-width: 150px;
+  }
+  
+  .acciones-cell {
+    flex-direction: column;
+  }
+}

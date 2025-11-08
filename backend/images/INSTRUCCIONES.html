@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones - Agregar Imágenes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .emoji {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #764ba2;
+            font-size: 24px;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .step {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .step strong {
+            color: #764ba2;
+            font-size: 18px;
+        }
+        ul {
+            margin: 15px 0 15px 20px;
+        }
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .link-box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .link-box a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">📁🖼️</div>
+        <h1>Instrucciones para Agregar Imágenes</h1>
+        <p style="color: #666; margin-bottom: 20px;">Esta carpeta está destinada para tus imágenes personales de la galería</p>
+
+        <h2>✅ Pasos para agregar tus imágenes</h2>
+        
+        <div class="step">
+            <strong>Paso 1:</strong> Descarga o copia tus imágenes favoritas
+        </div>
+        
+        <div class="step">
+            <strong>Paso 2:</strong> Pega las imágenes directamente en esta carpeta
+            <div class="code">Ruta: backend\public\images\</div>
+        </div>
+        
+        <div class="step">
+            <strong>Paso 3:</strong> Asegúrate de tener al menos 20 imágenes para una galería completa
+        </div>
+
+        <h2>📋 Formatos soportados</h2>
+        <ul>
+            <li>✅ JPG / JPEG</li>
+            <li>✅ PNG</li>
+            <li>✅ GIF</li>
+            <li>✅ WEBP</li>
+        </ul>
+
+        <h2>💡 Recomendaciones</h2>
+        <ul>
+            <li><strong>Tamaño:</strong> 800x600 píxeles o similar</li>
+            <li><strong>Peso:</strong> Menos de 1MB por imagen</li>
+            <li><strong>Nombres:</strong> Cualquier nombre válido (ej: foto1.jpg, vacaciones.png)</li>
+            <li><strong>Cantidad:</strong> Mínimo 1 imagen, recomendado 20 o más</li>
+        </ul>
+
+        <h2>🌐 ¿Necesitas imágenes de prueba?</h2>
+        <p>Puedes descargar imágenes gratis de alta calidad desde:</p>
+        
+        <div class="link-box">
+            <strong>📸 Unsplash:</strong> 
+            <a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a>
+            <br><small>Imágenes profesionales de alta calidad</small>
+        </div>
+        
+        <div class="link-box">
+            <strong>🎨 Pexels:</strong> 
+            <a href="https://www.pexels.com/" target="_blank">https://www.pexels.com/</a>
+            <br><small>Fotos y videos gratis</small>
+        </div>
+        
+        <div class="link-box">
+            <strong>🖼️ Pixabay:</strong> 
+            <a href="https://pixabay.com/" target="_blank">https://pixabay.com/</a>
+            <br><small>Imágenes libres de derechos</small>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ IMPORTANTE:</strong><br>
+            • Necesitas al menos 1 imagen para que la galería funcione<br>
+            • No subas imágenes con derechos de autor sin permiso<br>
+            • El backend detectará automáticamente todas las imágenes que agregues
+        </div>
+
+        <div class="success">
+            <strong>✅ Listo para usar:</strong><br>
+            Una vez que agregues tus imágenes aquí, el backend las detectará automáticamente. 
+            No necesitas reiniciar el servidor.
+        </div>
+
+        <h2>📂 Ejemplo de estructura</h2>
+        <div class="code">
+images/<br>
+├── imagen1.jpg<br>
+├── imagen2.jpg<br>
+├── imagen3.png<br>
+├── foto_playa.jpg<br>
+├── montaña.jpeg<br>
+├── ciudad.jpg<br>
+└── ... (hasta 20 o más)
+        </div>
+    </div>
+</body>
+</html>

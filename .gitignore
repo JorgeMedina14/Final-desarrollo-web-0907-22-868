@@ -1,0 +1,13 @@
+node_modules/
+.env
+*.log
+.DS_Store
+.vscode/
+dist/
+build/
+backend/images/*.jpg
+backend/images/*.png
+backend/images/*.gif
+backend/images/*.jpeg
+backend/images/*.webp
+!backend/images/INSTRUCCIONES.html
